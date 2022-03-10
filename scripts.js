@@ -11,4 +11,10 @@ function newItem() {
      let list = $('#list');
      list.append(li);
    }
+
+
+   // This is for crossing out items off the list of items  
+   li.on('dblclick', function() {
+    li.toggleClass('strike');
+  });
 }
